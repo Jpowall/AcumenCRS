@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Property City Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Property City Flow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Look_Up_Cities</name>
+        <label>Look Up Cities</label>
+        <locationX>241</locationX>
+        <locationY>80</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Property_City</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CityName</elementReference>
+            </value>
+        </filters>
+        <object>City__c</object>
+        <outputAssignments>
+            <assignToReference>CityLookupID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Property_City</name>
+        <label>Update Property City</label>
+        <locationX>239</locationX>
+        <locationY>225</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>PropertyID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>City__c</field>
+            <value>
+                <elementReference>CityLookupID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Property__c</object>
+    </recordUpdates>
+    <startElementReference>Look_Up_Cities</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>CityLookupID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>CityName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Property record from Process Builder</description>
+        <name>PropertyID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+</Flow>
