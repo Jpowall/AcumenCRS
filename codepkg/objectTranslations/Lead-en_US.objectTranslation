@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inquiry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inquiries</value>
+    </caseValues>
+    <fields>
+        <label><!-- Request Info on Loans --></label>
+        <name>Info_on_Loans__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- List the proposed projects: --></label>
+        <name>List_the_proposed_projects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Address --></label>
+        <name>Property_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property City --></label>
+        <name>Property_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Year Built --></label>
+        <name>Property_Year_Built__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Zip --></label>
+        <name>Property_Zip__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check the box if you would like a staff member to visit your property and consult on your proposed projects --></help>
+        <label><!-- Would Like a Site Visit --></label>
+        <name>Request_a_Site_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- The structure is sided with: --></label>
+        <name>The_Structure_is_Sided_With__c</name>
+        <picklistValues>
+            <masterLabel>Aluminum or Vinyl Siding</masterLabel>
+            <translation><!-- Aluminum or Vinyl Siding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brick</masterLabel>
+            <translation><!-- Brick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insulbrick or Asbestos Shingles</masterLabel>
+            <translation><!-- Insulbrick or Asbestos Shingles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stone</masterLabel>
+            <translation><!-- Stone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stucco</masterLabel>
+            <translation><!-- Stucco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wooded Clapboard or Shingles</masterLabel>
+            <translation><!-- Wooded Clapboard or Shingles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- The structure&apos;s windows are: --></label>
+        <name>The_structure_s_windows_are__c</name>
+        <picklistValues>
+            <masterLabel>Aluminum-clad Wood</masterLabel>
+            <translation><!-- Aluminum-clad Wood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steel or Aluminum Casements</masterLabel>
+            <translation><!-- Steel or Aluminum Casements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vinyl</masterLabel>
+            <translation><!-- Vinyl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wood</masterLabel>
+            <translation><!-- Wood --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Ward/Neighborhood --></label>
+        <name>Ward_Neighborhood__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

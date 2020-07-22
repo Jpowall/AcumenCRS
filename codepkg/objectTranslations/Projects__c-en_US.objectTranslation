@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Address__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the contractor who is working on the project --></help>
+        <label><!-- Contractor --></label>
+        <name>Contractor__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the end date of the project, put in an estimated one until the project is completed --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan # --></label>
+        <name>Loan_Name__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Cost --></label>
+        <name>Project_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a brief (few words) description of the project. Additional information can be added in the Project Notes box --></help>
+        <label><!-- Project Description --></label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter in details about the specific project --></help>
+        <label><!-- Project Notes --></label>
+        <name>Project_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Remainder --></label>
+        <name>Project_Remainder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Retainer --></label>
+        <name>Project_Retainer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Retainer to be Released --></label>
+        <name>Project_Retainer_to_be_Released__c</name>
+    </fields>
+    <fields>
+        <help><!-- Compare to &quot;Project Retainer&quot; field to know how much retainer should be paid --></help>
+        <label><!-- Retainer Drawn --></label>
+        <name>Retainer_Drawn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Entered the start date of the project --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Drawn --></label>
+        <name>Total_Drawn__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
