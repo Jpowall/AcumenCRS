@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Role xmlns="http://soap.sforce.com/2006/04/metadata">
-    <caseAccessLevel>Edit</caseAccessLevel>
-    <contactAccessLevel>Edit</contactAccessLevel>
-    <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Heritage Home Program Assistant</name>
-    <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>Heritage_Home_Program_Specialist</parentRole>
-</Role>
