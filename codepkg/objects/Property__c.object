@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
-        <actionName>CallHighlightAction</actionName>
+        <actionName>Accept</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>CallHighlightAction</actionName>
+        <actionName>Accept</actionName>
         <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>CallHighlightAction</actionName>
+        <actionName>Accept</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -25,6 +25,20 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -57,34 +71,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>EmailHighlightAction</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>EmailHighlightAction</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>EmailHighlightAction</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>EnableCustomerPortalUser</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>EnableCustomerPortalUser</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>EnableCustomerPortalUser</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -95,20 +81,6 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>List</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>ListClean</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>ListClean</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>ListClean</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -127,20 +99,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>RequestUpdate</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>RequestUpdate</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>RequestUpdate</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -151,20 +109,6 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SmsHighlightAction</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SmsHighlightAction</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SmsHighlightAction</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -196,61 +140,29 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <actionOverrides>
-        <actionName>ViewCustomerPortalUser</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>ViewCustomerPortalUser</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>ViewCustomerPortalUser</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>WebsiteHighlightAction</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>WebsiteHighlightAction</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>WebsiteHighlightAction</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>true</enableEnhancedLookup>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
-        <fullName>AccountNumber</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>AccountSource</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>AnnualRevenue</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Architecture_Style_2__c</fullName>
+        <fullName>Architecture_Style__c</fullName>
         <externalId>false</externalId>
         <label>Architecture Style</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -353,74 +265,55 @@
                     <default>false</default>
                     <label>Workers Cottage</label>
                 </value>
-                <value>
-                    <fullName>NULL</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>NULL</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
-        <fullName>BillingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Census_tract_number_2__c</fullName>
-        <externalId>false</externalId>
-        <label>Census tract number</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>City_2__c</fullName>
+        <fullName>City__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>City</label>
         <referenceTo>City__c</referenceTo>
-        <relationshipLabel>Accounts</relationshipLabel>
-        <relationshipName>Accounts</relationshipName>
+        <relationshipLabel>Properties</relationshipLabel>
+        <relationshipName>Properties</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Council_Member_2__c</fullName>
+        <fullName>Council_Member__c</fullName>
         <externalId>false</externalId>
-        <formula>Ward_2__r.Council_Member__r.FirstName  +  Ward_2__r.Council_Member__r.LastName</formula>
+        <formula>Ward__r.Council_Member__r.FirstName + &apos; &apos; +  Ward__r.Council_Member__r.LastName</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Council Member</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>County_2__c</fullName>
+        <fullName>County__c</fullName>
         <externalId>false</externalId>
-        <formula>Ward_2__r.City__r.County__r.Name</formula>
+        <formula>Ward__r.City__r.County__r.Name</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>County</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Description</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Ethnicity_2__c</fullName>
+        <fullName>Ethnicity__c</fullName>
         <externalId>false</externalId>
         <label>Ethnicity</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -447,11 +340,12 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Exterior_Type_2__c</fullName>
+        <fullName>Exterior_Type__c</fullName>
         <externalId>false</externalId>
         <label>Exterior Type</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
             <valueSetDefinition>
@@ -515,23 +409,21 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Fax</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Female_Headed_2__c</fullName>
+        <fullName>Female_Headed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Female Headed</label>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Income_Level_2__c</fullName>
+        <fullName>Income_Level__c</fullName>
         <externalId>false</externalId>
         <label>Income Level</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
             <valueSetDefinition>
@@ -560,253 +452,187 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Industry</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Jigsaw</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
         <fullName>LegacyID__c</fullName>
         <externalId>true</externalId>
         <label>LegacyID</label>
         <length>50</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>MyPlace_Property_Owner__c</fullName>
-        <description>Name of the property owner pulled from the associated MyPlace Property</description>
-        <externalId>false</externalId>
-        <formula>MyPlace_Property__r.DEEDED_OWNER__c</formula>
-        <inlineHelpText>Name of the property owner pulled from the associated MyPlace Property</inlineHelpText>
-        <label>MyPlace Property Owner</label>
-        <required>false</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MyPlace_Property__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>Imported property data from MyPlace that has been automatically matched to the property record in Salesforce</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Imported property data from MyPlace that has been automatically matched to the property record in Salesforce</inlineHelpText>
-        <label>MyPlace Property</label>
-        <referenceTo>MyPlace_Property__c</referenceTo>
-        <relationshipLabel>Accounts</relationshipLabel>
-        <relationshipName>Accounts</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Name</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Non_Homeowner_Contact_2__c</fullName>
+        <fullName>Non_Homeowner_Contact__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Non-Homeowner Contact</label>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Accounts (Non-Homeowner Contact)</relationshipLabel>
-        <relationshipName>PropertiesNonHomeowned_2</relationshipName>
+        <relationshipLabel>Properties (Non-Homeowner Contact)</relationshipLabel>
+        <relationshipName>PropertiesNonHomeowned</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>NumberOfEmployees</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Number_of_Units_2__c</fullName>
+        <fullName>Number_of_Units__c</fullName>
         <externalId>false</externalId>
         <label>Number of Units</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Number_of_occupants_2__c</fullName>
+        <fullName>Number_of_occupants__c</fullName>
         <externalId>false</externalId>
         <label>Number of occupants</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Over_65_2__c</fullName>
+        <fullName>Over_65__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Over 65</label>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>OwnerId</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Owner_occupied_2__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Owner occupied</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Ownership</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Parcel_Number_2__c</fullName>
-        <externalId>false</externalId>
-        <label>Parcel Number</label>
-        <length>50</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>ParentId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Hierarchy</type>
-    </fields>
-    <fields>
-        <fullName>Phone</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Photo_2_2__c</fullName>
-        <externalId>false</externalId>
-        <label>Photo 2</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Html</type>
-        <visibleLines>25</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Previous_Owner_1_2__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Previous Owner 1</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Accounts</relationshipLabel>
-        <relationshipName>Accounts</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Previous_Owner_2_2__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Previous Owner 2</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Accounts (Previous Owner 2)</relationshipLabel>
-        <relationshipName>Accounts1</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Previous_Owner_3_2__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Previous Owner 3</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Accounts (Previous Owner 3)</relationshipLabel>
-        <relationshipName>Accounts2</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Property_Full_Name_2__c</fullName>
-        <externalId>false</externalId>
-        <formula>Street_2__c  + &apos; &apos; + City_2__r.Name</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Property Full Name</label>
-        <required>false</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Property_Image_2__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Property Image</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Property_Owner_2_2__c</fullName>
+        <fullName>Owner_2__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Property Owner 2</label>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Accounts (Property Owner 2)</relationshipLabel>
-        <relationshipName>Accounts4</relationshipName>
+        <relationshipLabel>Properties (Owner 2)</relationshipLabel>
+        <relationshipName>Owned_Properties2</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Property_Owner_2__c</fullName>
+        <fullName>Owner__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Property Owner</label>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Accounts (Property Owner)</relationshipLabel>
-        <relationshipName>Accounts3</relationshipName>
+        <relationshipLabel>Properties</relationshipLabel>
+        <relationshipName>Owned_Properties</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Rating</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
+        <fullName>Owner_occupied__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Owner occupied</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>ShippingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <fullName>Parcel_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Parcel Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Sic</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <fullName>Photo_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Photo 2</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
     </fields>
     <fields>
-        <fullName>SicDesc</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <fullName>Previous_Owner_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Previous Owner 1</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Properties (Previous Owner 1)</relationshipLabel>
+        <relationshipName>Properties</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Site</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <fullName>Previous_Owner_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Previous Owner 2</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Properties (Previous Owner 2)</relationshipLabel>
+        <relationshipName>Properties2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>State_2__c</fullName>
+        <fullName>Previous_Owner_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Previous Owner 3</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Properties (Previous Owner 3)</relationshipLabel>
+        <relationshipName>Properties3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Property_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Street_Full__c + &apos; &apos; + City__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Image__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Property Image</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
         <externalId>false</externalId>
         <label>State</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -1063,26 +889,44 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Street_2__c</fullName>
+        <fullName>Street_Full__c</fullName>
         <externalId>false</externalId>
-        <label>Street</label>
-        <length>255</length>
+        <formula>Street__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Street Full</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>TickerSymbol</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <fullName>Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Type</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
+        <fullName>Ward_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ward__r.Ward_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ward Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Ward_2__c</fullName>
+        <fullName>Ward__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Ward</label>
@@ -1096,37 +940,22 @@
             <isOptional>false</isOptional>
         </lookupFilter>
         <referenceTo>Ward__c</referenceTo>
-        <relationshipLabel>Accounts</relationshipLabel>
-        <relationshipName>Accounts</relationshipName>
+        <relationshipLabel>Properties</relationshipLabel>
+        <relationshipName>Properties</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Ward_Number_2__c</fullName>
-        <externalId>false</externalId>
-        <formula>Ward_2__r.Ward_Number__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Ward Number</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Website</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Window_Type_2__c</fullName>
+        <fullName>Window_Type__c</fullName>
         <externalId>false</externalId>
         <label>Window Type</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -1178,239 +1007,83 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Year_Built_2__c</fullName>
+        <fullName>Year_Built__c</fullName>
         <externalId>false</externalId>
         <label>Year Built</label>
         <length>50</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Zip_2__c</fullName>
+        <fullName>Zip__c</fullName>
         <externalId>false</externalId>
         <label>Zip</label>
         <length>50</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>census_tract_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Census tract number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Old Property</label>
     <listViews>
-        <fullName>AllAccounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Property_Full_Name_2__c</columns>
-        <columns>Property_Owner_2__c</columns>
-        <columns>City_2__c</columns>
-        <columns>Ward_Number_2__c</columns>
-        <columns>State_2__c</columns>
-        <columns>Zip_2__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Properties</label>
-    </listViews>
-    <listViews>
-        <fullName>MyAccounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Property_Full_Name_2__c</columns>
-        <columns>Property_Owner_2__c</columns>
-        <columns>City_2__c</columns>
-        <columns>Ward_Number_2__c</columns>
-        <columns>State_2__c</columns>
-        <columns>Zip_2__c</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Mine</filterScope>
-        <label>My Properties</label>
-    </listViews>
-    <listViews>
-        <fullName>NewThisWeek</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Property_Full_Name_2__c</columns>
-        <columns>Property_Owner_2__c</columns>
-        <columns>City_2__c</columns>
-        <columns>Ward_Number_2__c</columns>
-        <columns>State_2__c</columns>
-        <columns>Zip_2__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Owner__c</columns>
+        <columns>Street__c</columns>
+        <columns>Ward_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>Zip__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>ACCOUNT.CREATED_DATE</field>
+            <field>City__c</field>
             <operation>equals</operation>
-            <value>THIS_WEEK</value>
+            <value>Cleveland</value>
         </filters>
-        <label>New This Week</label>
+        <label>All</label>
     </listViews>
-    <listViews>
-        <fullName>Recently_Added</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Property_Full_Name_2__c</columns>
-        <columns>Property_Owner_2__c</columns>
-        <columns>City_2__c</columns>
-        <columns>Ward_Number_2__c</columns>
-        <columns>State_2__c</columns>
-        <columns>Zip_2__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>ACCOUNT.LAST_UPDATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>Recently Added</label>
-    </listViews>
+    <nameField>
+        <label>Property</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Old Properties</pluralLabel>
     <searchLayouts>
-        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Property_Full_Name_2__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>City_2__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Ward_Number_2__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>State_2__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>County_2__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Property_Owner_2__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Parcel_Number_2__c</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Property_Full_Name_2__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>City_2__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Property_Owner_2__c</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Property_Full_Name_2__c</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Property_Full_Name_2__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Property_Owner_2__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>City_2__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Ward_Number_2__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>State_2__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Zip_2__c</searchResultsAdditionalFields>
+        <customTabListAdditionalFields>Property_Full_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>City__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ward_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>State__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>County__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Owner__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Parcel_Number__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Property_Full_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>City__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Owner__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Property_Full_Name__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Property_Full_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Owner__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>City__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ward_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>State__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Zip__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <webLinks>
-        <fullName>AltavistaNews</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>true</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>true</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Altavista News</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>true</showsLocation>
-        <showsStatus>true</showsStatus>
-        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>Find_My_Ward</fullName>
-        <availability>online</availability>
-        <description>Link to Cleveland City Council&apos;s Find My Ward site</description>
-        <displayType>button</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Find My Ward</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>https://clevelandcitycouncil.org/find-my-ward</url>
-    </webLinks>
-    <webLinks>
-        <fullName>GoogleMaps</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Google Maps</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
-    </webLinks>
-    <webLinks>
-        <fullName>GoogleNews</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Google News</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
-    </webLinks>
-    <webLinks>
-        <fullName>GoogleSearch</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Google Search</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>http://www.google.com/search?q={!Account_Name}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>HooversProfile</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Hoovers Profile</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>YahooMaps</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>true</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>true</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Yahoo Maps</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>true</showsLocation>
-        <showsStatus>true</showsStatus>
-        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
-    </webLinks>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
 </CustomObject>
