@@ -444,7 +444,6 @@
         <fields>Ward_Number_2__c</fields>
         <fields>State_2__c</fields>
         <fields>County_2__c</fields>
-        <fields>Property_Owner_2__c</fields>
         <fields>Parcel_Number_2__c</fields>
         <relatedList>Account.Previous_Owner_1_2__c</relatedList>
     </relatedLists>
@@ -455,7 +454,6 @@
         <fields>Ward_Number_2__c</fields>
         <fields>State_2__c</fields>
         <fields>County_2__c</fields>
-        <fields>Property_Owner_2__c</fields>
         <fields>Parcel_Number_2__c</fields>
         <relatedList>Account.Previous_Owner_2_2__c</relatedList>
     </relatedLists>
@@ -466,7 +464,6 @@
         <fields>Ward_Number_2__c</fields>
         <fields>State_2__c</fields>
         <fields>County_2__c</fields>
-        <fields>Property_Owner_2__c</fields>
         <fields>Parcel_Number_2__c</fields>
         <relatedList>Account.Previous_Owner_3_2__c</relatedList>
     </relatedLists>
@@ -477,7 +474,6 @@
         <fields>Ward_Number_2__c</fields>
         <fields>State_2__c</fields>
         <fields>County_2__c</fields>
-        <fields>Property_Owner_2__c</fields>
         <fields>Parcel_Number_2__c</fields>
         <relatedList>Account.Non_Homeowner_Contact_2__c</relatedList>
     </relatedLists>
@@ -488,18 +484,6 @@
         <fields>Ward_Number_2__c</fields>
         <fields>State_2__c</fields>
         <fields>County_2__c</fields>
-        <fields>Property_Owner_2__c</fields>
-        <fields>Parcel_Number_2__c</fields>
-        <relatedList>Account.Property_Owner_2__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>ACCOUNT.NAME</fields>
-        <fields>Property_Full_Name_2__c</fields>
-        <fields>City_2__c</fields>
-        <fields>Ward_Number_2__c</fields>
-        <fields>State_2__c</fields>
-        <fields>County_2__c</fields>
-        <fields>Property_Owner_2__c</fields>
         <fields>Parcel_Number_2__c</fields>
         <relatedList>Account.Property_Owner_2_2__c</relatedList>
     </relatedLists>
