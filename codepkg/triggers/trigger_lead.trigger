@@ -1,5 +1,4 @@
 trigger trigger_lead on Lead (before insert, before update) {
-    System.debug('Lead Trigger');
     LeadTriggerController ltc = new LeadTriggerController();
     if(Trigger.isBefore){
         if(Trigger.isInsert) {

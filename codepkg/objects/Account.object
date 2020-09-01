@@ -1316,7 +1316,7 @@
         <protected>false</protected>
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
-        <url>https://clevelandcitycouncil.org/find-my-ward</url>
+        <url>https://clevelandcitycouncil.org/find-my-ward?address= + {!URLENCODE(Account.Name)}</url>
     </webLinks>
     <webLinks>
         <fullName>GoogleMaps</fullName>

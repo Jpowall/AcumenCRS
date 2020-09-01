@@ -42,6 +42,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ContactDATest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LeadTriggerController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
