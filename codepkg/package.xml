@@ -2,112 +2,20 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>AccountDA</members>
-        <members>AccountDAI</members>
-        <members>AccountDATest</members>
-        <members>AccountTriggerController</members>
-        <members>CityDA</members>
-        <members>CityDA</members>
-        <members>CityDAI</members>
-        <members>CityDAI</members>
-        <members>CityDATest</members>
         <members>ContactDA</members>
         <members>ContactDAI</members>
-        <members>LeadTriggerController</members>
+        <members>ContactDATest</members>
         <members>LeadTriggerController</members>
         <members>LeadTriggerControllerTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>trigger_account</members>
         <members>trigger_lead</members>
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>standard__LightningSales</members>
-        <name>CustomApplication</name>
-    </types>
-    <types>
-        <members>Account.Architecture_Style_2__c</members>
-        <members>Account.Census_tract_number_2__c</members>
-        <members>Account.City_2__c</members>
-        <members>Account.Council_Member_2__c</members>
-        <members>Account.County_2__c</members>
-        <members>Account.Ethnicity_2__c</members>
-        <members>Account.Exterior_Type_2__c</members>
-        <members>Account.Female_Headed_2__c</members>
-        <members>Account.Income_Level_2__c</members>
-        <members>Account.Non_Homeowner_Contact_2__c</members>
-        <members>Account.Number_of_Units_2__c</members>
-        <members>Account.Number_of_occupants_2__c</members>
-        <members>Account.Over_65_2__c</members>
-        <members>Account.Owner_occupied_2__c</members>
-        <members>Account.Parcel_Number_2__c</members>
-        <members>Account.Photo_2_2__c</members>
-        <members>Account.Previous_Owner_1_2__c</members>
-        <members>Account.Previous_Owner_2_2__c</members>
-        <members>Account.Previous_Owner_3_2__c</members>
-        <members>Account.Property_Full_Name_2__c</members>
-        <members>Account.Property_Image_2__c</members>
-        <members>Account.Property_Owner_2_2__c</members>
-        <members>Account.Property_Owner_2__c</members>
-        <members>Account.Property_Owner_2__c</members>
-        <members>Account.State_2__c</members>
-        <members>Account.Street_2__c</members>
-        <members>Account.Ward_2__c</members>
-        <members>Account.Ward_Number_2__c</members>
-        <members>Account.Window_Type_2__c</members>
-        <members>Account.Year_Built_2__c</members>
-        <members>Account.Zip_2__c</members>
-        <members>Contact.AltName__c</members>
-        <members>Contact.Secondary_Email__c</members>
-        <members>HRS__c.Property_Full_Name_2__c</members>
-        <members>Inquiry__c.Property_2__c</members>
-        <members>Loan__c.Appraiser__c</members>
-        <members>Loan__c.Loan_Property_Street__c</members>
-        <members>Loan__c.Property_2__c</members>
-        <members>Projects__c.Property_Full_Name_2__c</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>Account</members>
-        <members>MyPlace_Property__c</members>
-        <members>Property__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>MyPlace_Property__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
-        <members>CompanyDashboards/CfWkXacpNWTbiAUhEcBxchgpJdyMma</members>
-        <name>Dashboard</name>
-    </types>
-    <types>
-        <members>Account-Account Layout</members>
         <members>Contact-Contact Layout</members>
-        <members>MyPlace_Property__c-MyPlace Property Layout</members>
         <name>Layout</name>
     </types>
-    <types>
-        <members>Account.NewThisWeek</members>
-        <members>Account.Recently_Added</members>
-        <name>ListView</name>
-    </types>
-    <types>
-        <members>Admin</members>
-        <members>Restoration Society</members>
-        <name>Profile</name>
-    </types>
-    <types>
-        <members>HeritageHomeProgramCommonlyUsed/Copy_of_Site_Visits_TEST_F3B</members>
-        <members>HeritageHomeProgramCommonlyUsed/Copy_of_Summary_report_of_loans_by_city_l61</members>
-        <members>HeritageHomeProgramCommonlyUsed/Copy_of_Summary_report_of_loans_by_ward_TOK</members>
-        <members>HeritageHomeProgramCommonlyUsed/Copy_of_Technical_Assistance_TEST_nbB</members>
-        <members>unfiled$public/Site_Visits_TEST_4Bt</members>
-        <members>unfiled$public/Summary_report_by_city_B12</members>
-        <members>unfiled$public/Summary_report_of_loans_by_ward_xml</members>
-        <members>unfiled$public/Technical_Assistance_TEST_b5n</members>
-        <name>Report</name>
-    </types> 
     <version>48.0</version>
 </Package>
