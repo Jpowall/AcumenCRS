@@ -6,34 +6,29 @@
     <columns>
         <field>Inquiry__c$Property__c</field>
     </columns>
-    <columns>
-        <field>Inquiry__c$Note__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Inquiry__c$Estimate_Amount__c</field>
-    </columns>
     <filter>
         <criteriaItems>
             <column>Inquiry__c$Site_Visit__c</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>1</value>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inquiry__c$Technical_Assistance__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Inquiry__c$Property_City__c</field>
+        <field>Inquiry__c$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Month</dateGranularity>
-        <field>Inquiry__c$Date__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>Site Visits (TEST)</name>
+    <name>Non-site Non-technical Client Contacts</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -43,10 +38,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Inquiry__c$Property__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Inquiry__c$Date__c</dateColumn>
+        <dateColumn>Inquiry__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

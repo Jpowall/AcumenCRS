@@ -12,6 +12,7 @@
     <label>Heritage Home Program</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
+    <tabs>Dashboard_with_Active_Loan_info</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>Inquiry__c</tabs>

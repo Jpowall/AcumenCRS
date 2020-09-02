@@ -100,7 +100,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <dashboardFilterColumns>
-                    <column>Inquiry__c.Date__c</column>
+                    <column>CUST_CREATED_DATE</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
                     <column>CUST_CREATED_DATE</column>
@@ -114,7 +114,19 @@
                         <type>detail</type>
                     </flexTableColumn>
                     <flexTableColumn>
-                        <reportColumn>Inquiry__c.Contact__c</reportColumn>
+                        <reportColumn>Loan__c.Loan_Amount__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>detail</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>Loan__c.Property_City__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>detail</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>Loan__c.Property_2__c</reportColumn>
                         <showSubTotal>false</showSubTotal>
                         <showTotal>false</showTotal>
                         <type>detail</type>
@@ -126,8 +138,8 @@
                     <hideChatterPhotos>true</hideChatterPhotos>
                 </flexComponentProperties>
                 <groupingSortProperties/>
-                <header>Requires a Call Back</header>
-                <report>HeritageHomeProgramCommonlyUsed/New_Client_Contacts_Report_MYl</report>
+                <header>Active Loans</header>
+                <report>HeritageHomeProgramCommonlyUsed/Active_Loans_DwD</report>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>11</rowSpan>
@@ -423,7 +435,7 @@
     <isGridLayout>true</isGridLayout>
     <runningUser>acumen@clevelandrestoration.org.crsuat</runningUser>
     <textColor>#000000</textColor>
-    <title>Summary Information by City</title>
+    <title>Summary Information by City with Active Loan Info</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

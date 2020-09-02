@@ -73,12 +73,18 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Dashboard_with_Active_Loan_info</members>
         <members>MyPlace_Property__c</members>
         <name>CustomTab</name>
     </types>
     <types>
         <members>CompanyDashboards/CfWkXacpNWTbiAUhEcBxchgpJdyMma</members>
+        <members>CompanyDashboards/CfWkXacpNWTbiAUhEcBxchgpJdyMma1</members>
         <name>Dashboard</name>
+    </types>
+    <types>
+        <members>Dashboard_with_Active_Loan_info</members>
+        <name>FlexiPage</name>
     </types>
     <types>
         <members>Account-Account Layout</members>
@@ -97,10 +103,14 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>HeritageHomeProgramCommonlyUsed/Active_Loans_DwD</members>
         <members>HeritageHomeProgramCommonlyUsed/Copy_of_Site_Visits_TEST_F3B</members>
         <members>HeritageHomeProgramCommonlyUsed/Copy_of_Summary_report_of_loans_by_city_l61</members>
         <members>HeritageHomeProgramCommonlyUsed/Copy_of_Summary_report_of_loans_by_ward_TOK</members>
         <members>HeritageHomeProgramCommonlyUsed/Copy_of_Technical_Assistance_TEST_nbB</members>
+        <members>HeritageHomeProgramCommonlyUsed/Nonsite_Nontechnical_Client_Contacts_Xbf</members>
+        <members>HeritageHomeProgramCommonlyUsed/Requires_a_Call_Back_Zuv</members>
+        <members>HeritageHomeProgramCommonlyUsed/Summary_Report_of_Client_Contact_fgO</members>
         <members>unfiled$public/Site_Visits_TEST_4Bt</members>
         <members>unfiled$public/Summary_report_by_city_B12</members>
         <members>unfiled$public/Summary_report_of_loans_by_ward_xml</members>

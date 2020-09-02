@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Inquiry__c$Contact__c</field>
-    </columns>
-    <columns>
-        <field>Inquiry__c$Property__c</field>
-    </columns>
-    <columns>
-        <field>Inquiry__c$Note__c</field>
+        <field>Inquiry__c$Name</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Inquiry__c$Estimate_Amount__c</field>
+        <field>Inquiry__c$Site_Visit__c</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Inquiry__c$Site_Visit__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>1</value>
-        </criteriaItems>
-    </filter>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Inquiry__c$Requires_Call_Back__c</field>
+    </columns>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
@@ -29,11 +18,11 @@
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
-        <dateGranularity>Month</dateGranularity>
-        <field>Inquiry__c$Date__c</field>
+        <dateGranularity>Day</dateGranularity>
+        <field>Inquiry__c$Technical_Assistance__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Site Visits (TEST)</name>
+    <name>Summary Report of Client Contact</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -43,10 +32,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Inquiry__c$Property__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Inquiry__c$Date__c</dateColumn>
+        <dateColumn>Inquiry__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

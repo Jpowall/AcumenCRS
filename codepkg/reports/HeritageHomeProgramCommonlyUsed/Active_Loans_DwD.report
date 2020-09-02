@@ -1,52 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Inquiry__c$Contact__c</field>
-    </columns>
-    <columns>
-        <field>Inquiry__c$Property__c</field>
-    </columns>
-    <columns>
-        <field>Inquiry__c$Note__c</field>
+        <field>CUST_NAME</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Inquiry__c$Estimate_Amount__c</field>
+        <field>Loan__c.Loan_Amount__c</field>
+    </columns>
+    <columns>
+        <field>Loan__c.Property_2__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>Inquiry__c$Site_Visit__c</column>
+            <column>Loan__c.Loan_Status__c</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>1</value>
+            <value>applied,completed bank documentation,signed - open</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Inquiry__c$Property_City__c</field>
+        <field>Loan__c.Property_City__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Month</dateGranularity>
-        <field>Inquiry__c$Date__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>Site Visits (TEST)</name>
+    <name>Active Loans</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>Inquiry__c</reportType>
+    <reportType>CustomEntity$Loan__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Inquiry__c$Property__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Inquiry__c$Date__c</dateColumn>
+        <dateColumn>Loan__c.Appraisal_Date__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

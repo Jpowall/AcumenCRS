@@ -626,6 +626,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabVisibilities>
+        <tab>Dashboard_with_Active_Loan_info</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>MyPlace_Property__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
