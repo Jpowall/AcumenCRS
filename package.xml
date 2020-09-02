@@ -17,6 +17,10 @@
         <name>ApexComponent</name>
     </types>
     <types>
+        <members>apexEmailNotifications</members>
+        <name>ApexEmailNotifications</name>
+    </types>
+    <types>
         <members>*</members>
         <name>ApexPage</name>
     </types>
@@ -160,6 +164,7 @@
         <members>CommSubscriptionConsent</members>
         <members>CommSubscriptionTiming</members>
         <members>Contact</members>
+        <members>ContactPointAddress</members>
         <members>ContactPointConsent</members>
         <members>ContactPointEmail</members>
         <members>ContactPointPhone</members>
@@ -262,6 +267,10 @@
     </types>
     <types>
         <members>*</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>DataCategoryGroup</name>
     </types>
     <types>
@@ -329,6 +338,10 @@
         <name>HomePageLayout</name>
     </types>
     <types>
+        <members>IframeWhiteListUrlSettings</members>
+        <name>IframeWhiteListUrlSettings</name>
+    </types>
+    <types>
         <members>*</members>
         <name>InstalledPackage</name>
     </types>
@@ -361,6 +374,8 @@
         <name>LightningMessageChannel</name>
     </types>
     <types>
+        <members>cms_document</members>
+        <members>cms_image</members>
         <members>news</members>
         <name>ManagedContentType</name>
     </types>
@@ -463,6 +478,10 @@
     <types>
         <members>NAMUpdatePageLayout</members>
         <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Report</name>
     </types>
     <types>
         <members>*</members>

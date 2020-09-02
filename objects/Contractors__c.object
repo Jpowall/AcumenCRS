@@ -1375,9 +1375,14 @@
         <columns>Minimum_Amount__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
+            <field>Area__c</field>
+            <operation>includes</operation>
+            <value>All Service Areas,Cleveland,East Side Only,Suburbs,Eastern Suburbs,Suburbs Preferred,Cuyahoga County</value>
+        </filters>
+        <filters>
             <field>Trade__c</field>
             <operation>includes</operation>
-            <value>Roofing</value>
+            <value>Carpentry,General Contractor</value>
         </filters>
         <label>Active Contractors</label>
     </listViews>
@@ -1394,11 +1399,6 @@
         <columns>City_c__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Share__c</field>
-            <operation>contains</operation>
-            <value>Yes</value>
-        </filters>
-        <filters>
             <field>Area__c</field>
             <operation>includes</operation>
             <value>All Service Areas,Suburbs,Eastern Suburbs,Suburbs Preferred,Cuyahoga County</value>
@@ -1406,7 +1406,17 @@
         <filters>
             <field>Trade__c</field>
             <operation>includes</operation>
-            <value>Carpentry,General Contractor,Restoration</value>
+            <value>Roofing</value>
+        </filters>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Share__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
         </filters>
         <label>All Contractors</label>
     </listViews>

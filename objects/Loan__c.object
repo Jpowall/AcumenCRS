@@ -869,9 +869,9 @@
         <columns>Date_Completed__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Property_Owner__c</field>
-            <operation>contains</operation>
-            <value>hendricks</value>
+            <field>Date_Completed__c</field>
+            <operation>lessThan</operation>
+            <value>8/19/2020</value>
         </filters>
         <label>All</label>
     </listViews>
