@@ -5,6 +5,8 @@
         <members>AccountDAI</members>
         <members>AccountDATest</members>
         <members>AccountTriggerController</members>
+        <members>AccountTriggerController</members>
+        <members>AccountTriggerControllerTest</members>
         <members>CityDA</members>
         <members>CityDAI</members>
         <members>CityDATest</members>
@@ -40,6 +42,7 @@
         <members>Account.Over_65_2__c</members>
         <members>Account.Owner_occupied_2__c</members>
         <members>Account.Parcel_Number_2__c</members>
+        <members>Account.ParentId</members>
         <members>Account.Photo_2_2__c</members>
         <members>Account.Previous_Owner_1_2__c</members>
         <members>Account.Previous_Owner_2_2__c</members>
@@ -59,15 +62,37 @@
         <members>Contact.AltName__c</members>
         <members>Contact.Secondary_Email__c</members>
         <members>HRS__c.Property_Full_Name_2__c</members>
-        <members>Inquiry__c.Property_2__c</members>
+        <members>Inquiry__c.NewProperty__c</members>
+        <members>Inquiry__c.New_Property_Census__c</members>
+        <members>Inquiry__c.New_Property_City__c</members>
+        <members>Inquiry__c.New_Property_Ethnicity__c</members>
+        <members>Inquiry__c.New_Property_Female_Headed__c</members>
+        <members>Inquiry__c.New_Property_Income__c</members>
+        <members>Inquiry__c.New_Property_Location__c</members>
+        <members>Inquiry__c.New_Property_Occupants__c</members>
+        <members>Inquiry__c.New_Property_Owner__c</members>
+        <members>Inquiry__c.New_Property_Units__c</members>
+        <members>Inquiry__c.New_Property_Ward__c</members>
+        <members>Inquiry__c.Property_Census__c</members>
+        <members>Inquiry__c.Property_City__c</members>
+        <members>Inquiry__c.Property_Ethnicity__c</members>
+        <members>Inquiry__c.Property_Female_Headed__c</members>
+        <members>Inquiry__c.Property_Income__c</members>
+        <members>Inquiry__c.Property_Location__c</members>
+        <members>Inquiry__c.Property_Occupants__c</members>
+        <members>Inquiry__c.Property_Owner__c</members>
+        <members>Inquiry__c.Property_Units__c</members>
+        <members>Inquiry__c.Property__c</members>
         <members>Loan__c.Appraiser__c</members>
         <members>Loan__c.Loan_Property_Street__c</members>
         <members>Loan__c.Property_2__c</members>
+        <members>MyPlace_Property__c.OCCUPANCY__c</members>
         <members>Projects__c.Property_Full_Name_2__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Account</members>
+        <members>Inquiry__c</members>
         <members>MyPlace_Property__c</members>
         <members>Property__c</members>
         <name>CustomObject</name>
@@ -90,6 +115,7 @@
     <types>
         <members>Account-Account Layout</members>
         <members>Contact-Contact Layout</members>
+        <members>MyPlace_Property__c-MyPlace Property Layout</members>
         <members>MyPlace_Property__c-MyPlace Property Layout</members>
         <name>Layout</name>
     </types>

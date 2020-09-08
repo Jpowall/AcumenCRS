@@ -683,6 +683,7 @@
     </fields>
     <fields>
         <fullName>ParentId</fullName>
+        <businessStatus>Hidden</businessStatus>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Hierarchy</type>
     </fields>

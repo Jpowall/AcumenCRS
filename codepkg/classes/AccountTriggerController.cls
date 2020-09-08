@@ -1,6 +1,14 @@
 public class AccountTriggerController {
 
 	public void beforeInsert(List<Account> newAccounts) {
+		setMyPlaceDataOnAccounts(newAccounts);
+	}
+
+	public void afterInsert(List<Account> newAccounts) {
+		createClientContactsForAccounts(newAccounts);
+	}
+
+	private void setMyPlaceDataOnAccounts(List<Account> newAccounts) {
 		for (Account acc : newAccounts) {
 			// Note: This is doing SOQL in a loop. getMyPlaceProperty() is not bulkified and cannot be bulkified.
 			// Be careful when inserting more than a few Accounts
@@ -13,7 +21,14 @@ public class AccountTriggerController {
 
 			acc.MyPlace_Property__c = matchingMyPlaceProperty.Id;
 			acc.Parcel_Number_2__c = matchingMyPlaceProperty.Name; // Name on MyPlace_Property__c is the Parcel Number
-			acc.Number_of_Units_2__c = matchingMyPlaceProperty.UNITS__c;
+
+			// If there isn't any number for the given units, use the occupancy instead
+			if (matchingMyPlaceProperty.UNITS__c == null || matchingMyPlaceProperty.UNITS__c == 0) {
+				acc.Number_of_Units_2__c = matchingMyPlaceProperty.OCCUPANCY__c;
+			} else {
+				acc.Number_of_Units_2__c = matchingMyPlaceProperty.UNITS__c;
+			}
+
 			// The Property Owner isn't being mapped here
 			// Instead, it is being pulled up onto Account with a formula field, MyPlace_Property_Owner__c
 
@@ -38,7 +53,7 @@ public class AccountTriggerController {
 		// While we could select by city as well, the county's data has a LOT of incorrect city names
 		// There's some bad zip codes, but much fewer than the bad cities
 		List<MyPlace_Property__c> possibleMyPlaceProperties = [
-			SELECT Name, Address__c, STREET_NUMBER__c, CITY__c, ZIP__c, UNITS__c, AGE__c, DEEDED_OWNER__c
+			SELECT Name, Address__c, STREET_NUMBER__c, CITY__c, ZIP__c, UNITS__c, OCCUPANCY__c, AGE__c, DEEDED_OWNER__c
 			FROM MyPlace_Property__c
 			WHERE ZIP__c = :accountToMatchProperty.Zip_2__c
 				AND STREET_NUMBER__c = :accountStreetNumber
@@ -65,5 +80,19 @@ public class AccountTriggerController {
 		}
 
 		return bestMatchMyPlaceProperty;
+	}
+
+	private void createClientContactsForAccounts(List<Account> newAccounts) {
+		List<Inquiry__c> clientContactsToCreate = new List<Inquiry__c>();
+		for (Account insertedAccount : newAccounts) {
+			Inquiry__c newClientContact = new Inquiry__c(
+					NewProperty__c = insertedAccount.Id,
+					Contact__c = insertedAccount.Property_Owner_2__c, //TODO: Property_Owner_2__c isn't being set yet
+					Date__c = insertedAccount.CreatedDate,
+					Note__c = 'Initial Inquiry'
+			);
+			clientContactsToCreate.add(newClientContact);
+		}
+		insert clientContactsToCreate;
 	}
 }

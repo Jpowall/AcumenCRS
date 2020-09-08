@@ -218,6 +218,20 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>OCCUPANCY__c</fullName>
+        <description>Residential occupancy from MyPlace</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Residential occupancy from MyPlace</inlineHelpText>
+        <label>Occupancy</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>PARCEL_ID__c</fullName>
         <caseSensitive>false</caseSensitive>
         <description>Parcel ID from MyPlace. Same as the parcel number / property number, but without dashes. Used as external ID</description>

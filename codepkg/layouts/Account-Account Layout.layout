@@ -356,14 +356,14 @@
         <relatedList>RelatedAccountContactRelationList</relatedList>
     </relatedLists>
     <relatedLists>
+        <fields>NAME</fields>
         <fields>Date__c</fields>
         <fields>Contact__c</fields>
-        <fields>Property_Location__c</fields>
+        <fields>New_Property_Location__c</fields>
         <fields>Note__c</fields>
         <fields>Technical_Assistance__c</fields>
         <fields>Site_Visit__c</fields>
-        <fields>NAME</fields>
-        <relatedList>Inquiry__c.Property_2__c</relatedList>
+        <relatedList>Inquiry__c.NewProperty__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
