@@ -14,8 +14,8 @@ public with sharing class LeadTriggerController {
     public void beforeInsert(List<Lead> leads) {
         Map<String, City__c> nameToCity = getCityNamesToCity(leads);
         createAccountsFromLeads(leads, nameToCity);
-        Map<String, List<Account>> emailToAccounts = createContactsForNewAccounts(leads); //assigns this.emailToContacts and accountName to
-        insertNonDuplicateContacts(this.emailToContacts); //assigns this.emailToContacts
+        Map<String, List<Account>> emailToAccounts = createContactsForNewAccounts(leads);
+        insertNonDuplicateContacts(this.emailToContacts);
         setPropertyOwnerOnAccounts(emailToContacts, accountNameToContactEmail);
         insertUniqueAccounts();
         createAccountContactRelations(this.emailToContacts, emailToAccounts);
@@ -23,7 +23,7 @@ public with sharing class LeadTriggerController {
 
     public void beforeUpdate(List<Lead> newLeads, List<Lead> oldLeads) {
         createAccountsFromLeads(newLeads, getCityNamesToCity(newLeads));
-        Map<String, List<Account>> emailToAccounts = createContactsForNewAccounts(newLeads); //assigns this.emailToContacts and accountName to
+        Map<String, List<Account>> emailToAccounts = createContactsForNewAccounts(newLeads);
         insertNonDuplicateContacts(this.emailToContacts);
         setPropertyOwnerOnAccounts(emailToContacts, accountNameToContactEmail);
         insertUniqueAccounts();
@@ -32,7 +32,6 @@ public with sharing class LeadTriggerController {
 
     @TestVisible
     private void createAccountsFromLeads(List<Lead> leads, Map<String, City__c> nameToCity) {
-        // Create new Accounts from each lead without making duplicates
         Map<String, Account> accountNamesToAccount = new Map<String, Account>();
         for (Lead ld : leads) {
             if (!accountNamesToAccount.containsKey(ld.Property_Address__c)) {
@@ -53,12 +52,11 @@ public with sharing class LeadTriggerController {
         List<Account> preexistingAccounts = accountAccessor.getAccountsByNames(new List<String>(this.accountNameToAccountMap.keySet()));
 
         for(Account currAccount : preexistingAccounts) {
-            // If the preexisting Account already has a different (or null) city,
-            // it means the address is different and we want to create a new Account for it
+
             if(currAccount.City_2__c == this.accountNameToAccountMap.get(currAccount.Name).City_2__c
                     || this.accountNameToAccountMap.get(currAccount.Name).City_2__c == null) {
-                this.accountNameToAccountMap.remove(currAccount.Name); // removing the account from what we'll insert
-                this.namesToAccountsWithIds.put(currAccount.Name, currAccount); // adding the version of the Account with the ID
+                this.accountNameToAccountMap.remove(currAccount.Name);
+                this.namesToAccountsWithIds.put(currAccount.Name, currAccount);
             }
         }
     }
@@ -72,7 +70,7 @@ public with sharing class LeadTriggerController {
 
         for(Lead currLead : leads) {
             List<Account> currentContactAccounts = new List<Account>();
-            if(!emailToContacts.containsKey(currLead.Email) || !accountNames.contains(currLead.Property_Address__c)) { //no duplicate emails and contacts, but con be one or other since contacts can have more than one account and accounts can have many contacts.
+            if(!emailToContacts.containsKey(currLead.Email) || !accountNames.contains(currLead.Property_Address__c)) {
                 Contact currCon = new Contact();
                 Account currAccount = this.namesToAccountsWithIds.get(currLead.Property_Address__c);
                 if(currAccount == null) {
@@ -97,7 +95,7 @@ public with sharing class LeadTriggerController {
                     currentContactAccounts.add(currAccount);
                     emailToAccounts.put(currCon.Email, currentContactAccounts);
                 } else {
-                    emailToAccounts.get(currLead.Email).add(currAccount); //add account Id to list if already made list
+                    emailToAccounts.get(currLead.Email).add(currAccount);
                 }
             }
         }
@@ -158,22 +156,11 @@ public with sharing class LeadTriggerController {
         }
     }
 
-    // Checking which properties already have Accounts created for them and only inserting the unique ones
     @TestVisible
     private void insertUniqueAccounts() {
-        // List<Account> preexistingAccounts = accountAccessor.getAccountsByNames(new List<String>(this.accountNameToAccountMap.keySet()));
-        // for(Account currAccount : preexistingAccounts) {
-        //     // If the preexisting Account already has a different (or null) city,
-        //     // it means the address is different and we want to create a new Account for it
-        //     if(currAccount.City_2__c == this.accountNameToAccountMap.get(currAccount.Name).City_2__c
-        //             || this.accountNameToAccountMap.get(currAccount.Name).City_2__c == null) {
-        //         this.accountNameToAccountMap.remove(currAccount.Name); // removing the account from what we'll insert
-        //         namesToAccountsWithIds.put(currAccount.Name, currAccount); // adding the version of the Account with the ID
-        //     }
-        // }
         accountAccessor.insertAccounts(this.accountNameToAccountMap.values());
         this.namesToAccountsWithIds.putAll(this.accountNameToAccountMap);
-        this.accountNameToAccountMap = namesToAccountsWithIds; // all of these Accounts now have IDs!
+        this.accountNameToAccountMap = namesToAccountsWithIds;
     }
 
     @TestVisible
