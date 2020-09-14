@@ -36,4 +36,19 @@ public with sharing class AccountDATest {
 
         System.assertEquals(returnedAccount, newAccount);
     }
+
+    @isTest
+    public static void getAccountsByIds_givenIds_returnsAccounts() {
+        Account newAccount = new Account();
+        newAccount.Name = '123 Cleveland Street';
+        insert newAccount;
+
+        List<Id> ids = new List<Id>{newAccount.Id};
+
+        Test.startTest();
+            Account returnedAccount = accountDA.getAccountsByNames(ids)[0];
+        Test.stopTest();
+
+        System.assertEquals(returnedAccount.Id, newAccount.Id);
+    }
 }
