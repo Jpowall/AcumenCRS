@@ -4,9 +4,6 @@
         <members>AccountDA</members>
         <members>AccountDAI</members>
         <members>AccountDATest</members>
-        <members>AccountTriggerController</members>
-        <members>AccountTriggerController</members>
-        <members>AccountTriggerControllerTest</members>
         <members>CityDA</members>
         <members>CityDAI</members>
         <members>CityDATest</members>
@@ -18,7 +15,6 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>trigger_account</members>
         <members>trigger_lead</members>
         <name>ApexTrigger</name>
     </types>
