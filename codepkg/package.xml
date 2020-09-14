@@ -79,6 +79,8 @@
         <members>Inquiry__c.Property_Owner__c</members>
         <members>Inquiry__c.Property_Units__c</members>
         <members>Inquiry__c.Property__c</members>
+        <members>Lead.Property_State__c</members>
+        <members>Lead.Year_Built__c</members>
         <members>Loan__c.Appraiser__c</members>
         <members>Loan__c.Loan_Property_Street__c</members>
         <members>Loan__c.Property_2__c</members>
